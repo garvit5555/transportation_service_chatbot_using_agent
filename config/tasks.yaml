@@ -1,0 +1,27 @@
+route_research_task:
+  description: >
+    Research the best travel routes from {source_destination} to {target_destination} based on real-time traffic data and user preferences.
+  expected_output: >
+    A list of route options with key details such as travel time, congestion levels, and alternative routes.
+  agent: route_researcher
+
+traffic_analysis_task:
+  description: >
+    Gather real-time traffic data and analyze congestion levels on all possible routes from {source_destination} to {target_destination}.
+  expected_output: >
+    A traffic summary with congestion reports and estimated delays.
+  agent: traffic_analyst
+
+personalization_task:
+  description: >
+    Analyze user preferences and refine the travel recommendation. If necessary, ask follow-up questions to clarify preferences.
+  expected_output: >
+    A finalized travel plan, ensuring the best-suited route is selected.
+  agent: personalization_expert
+
+reporting_task:
+  description: >
+    Compile all insights into a structured report. Include route details, traffic conditions, and visual route maps.
+  expected_output: >
+    A detailed travel report in markdown format with recommended routes, maps, and travel insights.
+  agent: reporting_analyst
